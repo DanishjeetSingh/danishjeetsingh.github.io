@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <title>Danishjeet Singh</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../assets/logos/logo.svg" type="image/x-icon">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L78RTS8NGL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L78RTS8NGL');
+</script>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">Danishjeet Singh</a></h1>
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+
+        <p>Contact: <a href="mailto:singhdan@iu.edu">singhdan [at] iu.edu</a><br>
+          GitHub: <a href="https://github.com/danishjeetsingh">danishjeetsingh</a><br>
+          Twitter: <a href="https://twitter.com/danishjeetsingh">@danishjeetsingh</a><br>
+          LinkedIn: <a href="https://www.linkedin.com/in/danishjeetsingh/">danishjeetsingh</a><br>
+
+          <a href="/docs/cvs/Danishjeet_Singh_resume.pdf">Resume</a>, <a href="/docs/cvs/Danishjeet_Singh_CV.pdf">CV</a>, <a href="/docs/cvs/transcript_latest.pdf"">transcript</a>
+        </p>
+
+        <p>News <small>[<a href="/news.html">More Updates</a>] <br>
+          <p><strong>2024.09</strong> Our paper, <a href="https://doi.org/10.54501/jots.v2i4.197">Characteristics and prevalence of fake social media profiles with AI-generated faces</a> 
+            is now out at <a href="https://tsjournal.org/index.php/jots">Journal of Online Trust and Safety</a>.</p>
+
+          <!-- <strong>2024.09</strong> Presented my first <a href="/docs/posters/ganbot_ic2s2_poster.pdf">poster</a> for our 
+            <a href="https://arxiv.org/pdf/2401.02627">Twitter/X profiles with AI-faces</a> paper at 
+            <a href="https://ic2s2-2024.org/">IC2S2</a></p> -->
+
+        <p><small>Website heavily inspired by <a href="https://eugenielai.github.io/">Eugenie Y. Lai</a></small></p>
+      </header>
+      
+      <section>
+
+      {{ content }}
+      
+      </section>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
