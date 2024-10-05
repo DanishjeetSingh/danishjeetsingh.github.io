@@ -9,7 +9,7 @@ description: "I tried to design my own deck of cards during the COVID lockdown."
 
 This is a really old work of mine! 
 
-It was during COVID in 2020-21. I just wanted to give graphic desinging a shot and was getting
+It was during COVID in 2020-21. I just wanted to give graphic designing a shot and was getting
 pretty good at it, so I decided to design my own deck of cards. 
 
 Turns out designing 52 cards is extremely repititive and it got boring pretty quickly, I never really got to finish the

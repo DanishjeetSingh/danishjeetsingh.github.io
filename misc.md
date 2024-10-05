@@ -13,8 +13,9 @@ I have some old graphic design mockups, and some pictures I've took in a while a
   {% for file in site.pages %}
     {% if file.path contains "misc/" %}
       <div class="file-entry">
-        <strong><a href="{{ file.url }}" class="file-title">{{ file.title }}</a></strong> - {{ page.date }}
+        <misc><a href="{{ file.url }}" class="file-title">{{ file.title }}</a></misc> - <small><span class="file-date">{{ file.date | date: "%B %d, %Y" }}</span></small>
         <p class="file-description">{{ file.description }}</p>
+        <!-- Published on <span class="file-date">{{ file.date | date: "%B %d, %Y" }}</span> -->
       </div>
     {% endif %}
   {% endfor %}
