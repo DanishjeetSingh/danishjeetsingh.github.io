@@ -28,11 +28,11 @@ I write sometimes, checkout my [Medium](https://singhdan.medium.com/) page.
 <br> Published in the [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots).
 
 
-<!-- ## Projects <small>[[More Here]](./projects.html)</small>
+<!-- <!-- ## Projects <small>[[More Here]](./projects.html)</small> -->
 
 
 ## Other
 
-<span style="font-size:18px;">[Blog](./blog.html)</span> for weekend projects and some deep knowledge work
+<!-- <span style="font-size:18px;">[Blog](./blog.html)</span> for weekend projects and some deep knowledge work -->
 
-<span style="font-size:18px;">[Miscellaneous](./miscellaneous.html)</span> for fun! -->
+<span style="font-size:18px;">[Miscellaneous](./misc.html)</span> for fun!
