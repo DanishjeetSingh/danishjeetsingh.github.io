@@ -16,9 +16,7 @@ I'm a senior year Computer Science undergraduate student advised by
 I previously worked with [Dr. David Crandall](https://homes.luddy.indiana.edu/djcran/) 
 at [IU Computer Vision Lab](http://vision.soic.indiana.edu/).
 
-I’m really into social media analysis, especially around topics like misinformation and how information spreads. I’ve got a bit of a unique angle since I focus on the computer vision side of things, which makes analyzing different types of media(image, audio, video) super interesting for me. I love doing research because it’s a way to help inform the public and tackle some of the challenges we face in the digital world.
-
-
+I am broadly interested in computer vision, multimodal AI, and generative AI, building on my background in social media analysis. While my previous work concentrated on the dynamics of visual content in digital spaces, I am now shifting my attention toward developing innovative tools that augment human capabilities across various tasks. My goal is to create tools that enhance interaction with technology and improve how we engage with visual and textual information, making AI more accessible and beneficial in various contexts.
 
 I write sometimes, checkout my [Medium](https://singhdan.medium.com/) page.
  
