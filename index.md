@@ -26,11 +26,9 @@ I write sometimes, checkout my [Medium](https://singhdan.medium.com/) page.
 <br> Published in the [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots).
 
 
-<!-- <!-- ## Projects <small>[[More Here]](./projects.html)</small> -->
-
-
-## Other
-
 <!-- <span style="font-size:18px;">[Blog](./blog.html)</span> for weekend projects and some deep knowledge work -->
+<span style="font-size:18px;">[Projects](./projects.html)</span> for creative and serious work!!
 
-<span style="font-size:18px;">[Miscellaneous](./misc.html)</span> for fun!
+<span style="font-size:18px;">[Tools & Software](./tools.html)</span> that some may find helpful.
+
+<span style="font-size:18px;">[Miscellaneous](./misc.html)</span> shenanigans basically

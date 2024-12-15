@@ -5,6 +5,11 @@ author: Danishjeet Singh
 ---
 
 ## 2024
+
+**2024.12** My First Youtube Interview on discussing AI powered social bots and the Generative AI landscape on social media platforms like Facebook. Checkout the video [here](https://youtu.be/62EA8GQsysI?si=0-lVQNFqruxck_Zp&t=581)
+
+**2024.10** Introducing [Scipair](https://scipair.github.io/scipair/), A tool to explore relationships between authors using data from OpenAlex. Compare authors, visualize coauthorships and citations.
+
 **2024.09** Our paper, [Characteristics and prevalence of fake social media profiles with AI-generated faces](https://doi.org/10.54501/jots.v2i4.197) is now out at [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots).
 
 **2024.07** Presented my first [poster](/docs/posters/ganbot_ic2s2_poster.pdf) for our 
