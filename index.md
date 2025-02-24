@@ -5,10 +5,10 @@ author: Danishjeet Singh
 
 ---
 
-<div style="background-color: #f4f4f4; color: #333; text-align: center; padding: 20px; font-size: 24px; font-weight: bold; border: 2px solid #ccc;">
+<!-- <div style="background-color: #f4f4f4; color: #333; text-align: center; padding: 20px; font-size: 24px; font-weight: bold; border: 2px solid #ccc;">
     I am actively applying to CS PhD programs!
 </div>
-<br>
+<br> -->
 
 I'm a senior year Computer Science undergraduate student advised by 
 [Dr. Filippo Menczer ](https://cnets.indiana.edu/fil) at 
