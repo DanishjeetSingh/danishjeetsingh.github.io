@@ -14,9 +14,9 @@ I'm a senior year Computer Science undergraduate student advised by
 [Dr. Filippo Menczer ](https://cnets.indiana.edu/fil) at 
 [Observatory On Social Media at Indiana Univeristy(OSoMe@IU)](https://osome.iu.edu/). 
 I previously worked with [Dr. David Crandall](https://homes.luddy.indiana.edu/djcran/) 
-at [IU Computer Vision Lab](http://vision.soic.indiana.edu/).
+at the [IU Computer Vision Lab](http://vision.soic.indiana.edu/).
 
-I am broadly interested in computer vision, multimodal AI, and generative AI, building on my background in social media analysis. While my previous work concentrated on the dynamics of visual content in digital spaces, I am now shifting my attention toward developing innovative tools that augment human capabilities across various tasks. My goal is to create tools that enhance interaction with technology and improve how we engage with visual and textual information, making AI more accessible and beneficial in various contexts.
+I am broadly interested in computational social science and multimodal machine learning. My research has focused on deepfake detection, hate speech on social media platforms, and political communication online. Currently, I am exploring vision-language alignment and visual grounding, with a particular interest in spatial reasoning tasks. I am also interested in inference-based approaches for guiding vision-language models in latent space to improve consistency and reduce hallucinations.
 
 I write sometimes, checkout my [Medium](https://singhdan.medium.com/) page.
  
