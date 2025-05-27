@@ -16,6 +16,7 @@ author: Danishjeet Singh
 
 ## Misc
 - [Bankist](./bankist): A minimalist banking prototype—just a fun way to build my web development skills!. I also wrote a couple Medium articles explaining the working of this project check [here](https://singhdan.medium.com/bankist-when-banking-meets-minimalist-bba5635496d4) and [here](https://singhdan.medium.com/bankist-app-645672a50ae6)
+- [urloong](https://urloong.com/): a full-stack URL “longener” that turns any link into a comically endless chain of characters using Next.js, Express, and Supabase.
 
 Check out my [Github](https://github.com/danishjeetSingh/) for all the code.
 
