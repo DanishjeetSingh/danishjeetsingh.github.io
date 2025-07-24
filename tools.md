@@ -6,7 +6,7 @@ date: 2024-12-14
 ---
 
 # Software
-- [Scipair](https://scipair.github.io/scipair/): A tool to explore relationships between authors using data from OpenAlex. Compare authors, visualize coauthorships and citations.
+- [Scipair](https://scipair.github.io/): A tool to explore relationships between authors using data from OpenAlex. Compare authors, visualize coauthorships and citations.
 - [Label Dash](https://labeldash.streamlit.app/): Turn CSV annotation into a fast-paced, fun game for lightning-quick, accurate text labeling!
 
 # Code
