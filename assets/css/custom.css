@@ -1,9 +1,14 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   color:#595959;
   font-weight:400;
+}
+
+/* Also add this to be extra sure */
+html {
+  font-size: 15px !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,27 +18,24 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
-  font-size:16px;
-}
-
-h1, h2, h3 {
-  font-size:20px;
-  line-height:1.1;
+  font-size:16px !important;
 }
 
 h1 {
-  font-size:28px;
+  font-size:28px !important;
   font-weight: 500;
 }
 
 h2 {
   color:#393939;
   font-weight: 700;
+  font-size:20px !important;
 }
 
 h3, h4, h5, h6 {
   color:#494949;
   font-weight: 500;
+  font-size:20px !important;
 }
 
 a {

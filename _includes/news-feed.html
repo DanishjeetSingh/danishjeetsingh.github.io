@@ -1,0 +1,18 @@
+<div class="news-section">
+  <h2>Recent News <small><a href="/news.html">[See All Updates]</a></small></h2>
+  
+  {% assign count = 0 %}
+  
+  <!-- Show top 3 most recent items -->
+  {% for year in site.data.news %}
+    {% assign year_name = year[0] %}
+    {% assign year_items = year[1] %}
+    {% for item in year_items %}
+      {% if count < 3 %}
+        <p><strong>{{ item.date }}</strong> {{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  
+</div> 

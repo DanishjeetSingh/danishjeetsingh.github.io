@@ -1,0 +1,36 @@
+2025:
+  - date: "2025.04"
+    content: "Introducing [urloong](https://urloong.com), comically loong url for your special website!"
+2024:
+  - date: "2024.12"
+    content: "My First Youtube Interview on discussing AI powered social bots and the Generative AI landscape on social media platforms like Facebook. Checkout the video [here](https://youtu.be/62EA8GQsysI?si=0-lVQNFqruxck_Zp&t=581)"
+  
+  - date: "2024.10"
+    content: "Introducing [Scipair](https://scipair.github.io), A tool to explore relationships between authors using data from OpenAlex. Compare authors, visualize coauthorships and citations."
+  
+  - date: "2024.09"
+    content: "Our paper, [Characteristics and prevalence of fake social media profiles with AI-generated faces](https://doi.org/10.54501/jots.v2i4.197) is now out at [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots)."
+  
+  - date: "2024.07"
+    content: "Presented my first [poster](/docs/posters/ganbot_ic2s2_poster.pdf) for our [Twitter/X profiles with AI-faces](https://arxiv.org/pdf/2401.02627) paper at [IC2S2](https://ic2s2-2024.org/)"
+  
+  - date: "2024.06"
+    content: "Our paper, [Characteristics and prevalence of fake social media profiles with AI-generated faces](https://arxiv.org/pdf/2401.02627) got accepted by the [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots)."
+  
+  - date: "2024.01"
+    content: "Woo-hoo!, My very first research paper is out now on [arxiv](https://arxiv.org/pdf/2401.02627)."
+
+2023:
+  - date: "2023.01"
+    content: "I'm starting as a Research Assistant at [Observatory On Social Media at Indiana Univeristy(OSoMe@IU)](https://osome.iu.edu/); advised by [Dr. Filippo Menczer ](https://cnets.indiana.edu/fil) and mentored by [Dr. Kai-Cheng Yang](https://www.kaichengyang.me/)"
+
+2022:
+  - date: "2022.05"
+    content: "I'm starting as a Research Assistant at [IU Computer Vision lab](http://vision.soic.indiana.edu/); advised by [Dr. David Crandall](https://homes.luddy.indiana.edu/djcran/)"
+
+2021:
+  - date: "2021.09"
+    content: "Got my first job at IU Luddy as a Front-end Intern."
+  
+  - date: "2021.08"
+    content: "Started my Computer Science undergrad at [IU Luddy](https://luddy.indiana.edu/index.html)"

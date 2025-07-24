@@ -14,3 +14,13 @@ collections:
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   LinkedIn: https://www.linkedin.com/in/danishjeetsingh
   GitHub: https://github.com/danishjeetsingh
+
+sass:
+  style: compressed
+  
+keep_files: [assets]
+# Exclude from processing
+exclude:
+  - assets/css/style.css
+  - assets/css/pygment_trac.css
+
