@@ -26,12 +26,14 @@ I am broadly interested in computational social science and multimodal machine l
 ## Publications and Pre-prints
 [Task-aligned prompting improves zero-shot detection of AI-generated images by Vision-Language Models](https://arxiv.org/abs/2506.11031) (2025)
 <br> *Kachwala, Z., <strong>Danishjeet Singh</strong>, Yang, D., & Menczer, F.*
-<br> Arxiv preprint 
+<br> arxiv preprint <br> 
+<strong>TLDR;</strong> Simply prefacing the AI’s response with “Let’s examine the style and the synthesis artifacts” makes vision‑language models 8 %–29 % more accurate at spotting AI-generated pictures compared with the same models used off‑the‑shelf or with generic chain‑of‑thought prompts
 
 
 [Characteristics and prevalence of fake social media profiles with AI-generated faces](https://doi.org/10.54501/jots.v2i4.197) (2024)
 <br> *Yang, K.C., <strong>Danishjeet Singh</strong> & Menczer, F.*
-<br> Published in the [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots).
+<br> Published in the [Journal of Online Trust and Safety](https://tsjournal.org/index.php/jots).<br>
+<strong>TLDR;</strong> A tiny fraction of Twitter profiles use AI‑generated face photos, yet those accounts often disseminate scams and spam; by noting that such fake faces have their eyes in exactly the same place, we could identify them and estimated about 10,000 active accounts of this type.
 
 {% include news-feed.html %}
 

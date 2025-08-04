@@ -1,4 +1,6 @@
 2025:
+  - date: "2025.05"
+    content: "New pre-print alert, [Task-aligned prompting improves zero-shot detection of AI-generated images by Vision-Language Models](https://arxiv.org/abs/2506.11031) out on arxiv now."
   - date: "2025.04"
     content: "Introducing [urloong](https://urloong.com), comically loong url for your special website!"
 2024:
