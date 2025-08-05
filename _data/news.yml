@@ -1,6 +1,10 @@
 2025:
+  # - date: "2025.08"
+    # content: "Starting my Computer Science PhD at [IU Luddy](https://luddy.indiana.edu/)."
   - date: "2025.05"
     content: "New pre-print alert, [Task-aligned prompting improves zero-shot detection of AI-generated images by Vision-Language Models](https://arxiv.org/abs/2506.11031) out on arxiv now."
+  - date: "2025.05"  
+    content: "I graduated from [IU Luddy](https://luddy.indiana.edu/) with a Bachelor of Science in Computer Science, and I’m extremely happy with how much I’ve grown over the past four years, now I’m excited to tackle even bigger challenges ahead."
   - date: "2025.04"
     content: "Introducing [urloong](https://urloong.com), comically loong url for your special website!"
 2024:
