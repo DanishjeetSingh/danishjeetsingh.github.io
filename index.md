@@ -13,13 +13,18 @@ Hi, just call me Danish(daa-nish)
 
 I can be best reached through my email or my LinkedIn.
 
-I'm a senior year Computer Science undergraduate student advised by 
+I'm a first year Computer Science PhD Student at Indiana University, advised by [Dr. Mary Jean Amon](https://scholar.google.com/citations?hl=en&user=1OBLAFoAAAAJ&view_op=list_works&sortby=pubdate).
+
+I obtained my undergraduate degree from IU as well and was very fortunate to be advised by 
 [Dr. Filippo Menczer ](https://cnets.indiana.edu/fil) at 
 [Observatory On Social Media at Indiana Univeristy(OSoMe@IU)](https://osome.iu.edu/). 
-I previously worked with [Dr. David Crandall](https://homes.luddy.indiana.edu/djcran/) 
+Previously I've also worked with [Dr. David Crandall](https://homes.luddy.indiana.edu/djcran/) 
 at the [IU Computer Vision Lab](http://vision.soic.indiana.edu/).
 
-I am broadly interested in computational social science and multimodal machine learning. My research has focused on deepfake detection, hate speech on social media platforms, and political communication online. Currently, I am exploring vision-language alignment and visual grounding, with a particular interest in spatial reasoning tasks. I am also interested in inference-based approaches for guiding vision-language models in latent space to improve consistency and reduce hallucinations.
+I’m broadly fascinated by <strong>Generative AI</strong>, both how people use it and the pitfalls it can create, and I’m committed to digging into this technology at a deeper level to build <strong>customizable</strong>, <strong>explainable systems</strong>. From a <strong>computational social science</strong> perspective, I study the <strong>societal harms</strong> of generative models like <strong>deepfakes</strong> and <strong>toxic content</strong> on social platforms. On the <strong>mechanistic</strong> side, I probe <strong>vision-language models</strong> for <strong>object hallucination</strong> and <strong>concept evolution</strong>. Ultimately, I want to bridge both worlds: understanding the social issues these tools raise and uncovering their inner workings so we can design <strong>safer</strong>, more <strong>transparent AI</strong>.
+
+
+<!-- I am broadly interested in computational social science and multimodal machine learning. My research has focused on deepfake detection, hate speech on social media platforms, and political communication online. Currently, I am exploring vision-language alignment and visual grounding, with a particular interest in spatial reasoning tasks. I am also interested in inference-based approaches for guiding vision-language models in latent space to improve consistency and reduce hallucinations. -->
 
 <!-- I write sometimes, checkout my [Medium](https://singhdan.medium.com/) page. -->
 
