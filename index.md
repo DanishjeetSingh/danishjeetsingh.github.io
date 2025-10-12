@@ -29,10 +29,10 @@ I’m broadly fascinated by <strong>Generative AI</strong>, both how people use 
 <!-- I write sometimes, checkout my [Medium](https://singhdan.medium.com/) page. -->
 
 ## Publications and Pre-prints
-[Task-aligned prompting improves zero-shot detection of AI-generated images by Vision-Language Models](https://arxiv.org/abs/2506.11031) (2025)
+[Prefilled responses enhance zero-shot detection of AI-generated images](https://arxiv.org/abs/2506.11031) (2025)
 <br> *Kachwala, Z., <strong>Danishjeet Singh</strong>, Yang, D., & Menczer, F.*
 <br> arxiv preprint <br> 
-<strong>TLDR;</strong> Simply prefacing the AI’s response with “Let’s examine the style and the synthesis artifacts” makes vision‑language models 8 %–29 % more accurate at spotting AI-generated pictures compared with the same models used off‑the‑shelf or with generic chain‑of‑thought prompts
+<strong>TLDR;</strong> We show that prefilling Vision-Language Model responses with "Let's examine the style and synthesis artifacts" boosts AI-generated image detection by up to 24% without any training. This simple technique generalizes across 16 different image generators and outperforms standard prompting methods—basically, we guide the model to focus on the right visual cues by starting its response for it.
 
 
 [Characteristics and prevalence of fake social media profiles with AI-generated faces](https://doi.org/10.54501/jots.v2i4.197) (2024)
