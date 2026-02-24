@@ -7,6 +7,7 @@ author: Danishjeet Singh
 Most of these projects work best on a desktop environment.
 
 ## Creative Projects
+- [~ interludes](https://singhdan.me/claude-interludes) : Poetic thoughts written by Claude in the spaces between code. An experiment in what emerges when an AI is given permission to wander creatively.
 - [Flow Lines](./flow_lines) : Particle simulation using trigonometric flow fields, generating dynamic visual patterns through mathematical transformations of particle trajectories.
 - [Staggered Grid](./staggered_grid) : Responsive web grid with interactive tile animations. Creates dynamic visual interactions through smooth opacity transitions and animated backgrounds.
 - [Matrix Rain](./matrix_rain) : Generative visualization simulating dynamic symbol rainfall using procedural animation and canvas rendering. Like the Matrix movie ;)
