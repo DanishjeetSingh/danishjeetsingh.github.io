@@ -1,0 +1,46 @@
+{% assign publications_data = site.data.semantic_scholar_publications %}
+{% assign papers = publications_data.papers %}
+
+## Publications and Preprints
+
+{% if papers and papers.size > 0 %}
+<div class="publications-list">
+  {% for paper in papers %}
+  <article class="publication-item">
+    <h3>
+      {% assign primary_link = paper.links.doi | default: paper.links.arxiv_abs | default: paper.links.semantic_scholar %}
+      <a href="{{ primary_link }}">{{ paper.title | escape }}</a>
+    </h3>
+
+    <p class="publication-authors">
+      {% for author in paper.authors %}
+        {% if author.is_me %}
+          <strong>{{ author.display_name | default: author.name | escape }}</strong>
+        {% else %}
+          {{ author.display_name | default: author.name | escape }}
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+
+    <p class="publication-details">
+      {{ paper.venue | escape }} · {{ paper.year }} · {{ paper.label }}
+    </p>
+
+    {% if paper.tldr %}
+    <p class="publication-tldr">
+      <strong>TLDR;</strong> {{ paper.tldr | escape }}
+    </p>
+    {% endif %}
+
+    {% if paper.primary_link %}
+    <p class="publication-links">
+      <a href="{{ paper.primary_link.url }}">{{ paper.primary_link.label }}</a>
+    </p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+No publications found.
+{% endif %}

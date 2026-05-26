@@ -1,6 +1,6 @@
 # 1. Site settings
 theme: jekyll-theme-minimal
-logo: "/assets/logos/logo.jpg"
+logo: "/assets/logos/logo-display.jpg"
 title: "Danishjeet Singh"
 author: "Danishjeet Singh"
 email: "singhdan@iu.edu"
@@ -23,4 +23,3 @@ keep_files: [assets]
 exclude:
   - assets/css/style.css
   - assets/css/pygment_trac.css
-

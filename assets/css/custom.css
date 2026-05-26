@@ -168,6 +168,46 @@ strong {
   font-weight:500;
 }
 
+.publications-list {
+  margin-bottom:24px;
+}
+
+.publication-item {
+  padding:0;
+  margin:0 0 26px;
+}
+
+.publication-item:last-child {
+  margin-bottom:0;
+}
+
+.publication-item h3 {
+  font-size:18px !important;
+  line-height:1.35;
+  margin:0 0 6px;
+}
+
+.publication-authors,
+.publication-details,
+.publication-tldr,
+.publication-links {
+  margin:0 0 6px;
+  font-size:15px !important;
+}
+
+.publication-details {
+  color:#666;
+}
+
+.publication-tldr {
+  color:#555;
+}
+
+.publication-links a {
+  display:inline-block;
+  margin-right:12px;
+}
+
 header ul li + li + li {
   border-right:none;
   width:89px;

@@ -6,6 +6,10 @@ on:
   push:
     branches: ["main"]
 
+  # Refresh Semantic Scholar publication metadata daily
+  schedule:
+    - cron: "17 11 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -30,6 +34,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Fetch Semantic Scholar publications
+        env:
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+          SEMANTIC_SCHOLAR_AUTHOR_ID: "2278229261"
+        run: python3 scripts/fetch_semantic_scholar_publications.py
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
