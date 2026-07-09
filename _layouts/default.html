@@ -5,7 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
     <link rel="shortcut icon" href="../assets/logos/logo.svg" type="image/x-icon">
+    <script>
+      (function() {
+        try {
+          var choice = localStorage.getItem("theme") || "system";
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var resolved = choice === "system" ? (prefersDark ? "dark" : "light") : choice;
+          document.documentElement.setAttribute("data-theme", resolved);
+          document.documentElement.setAttribute("data-theme-choice", choice);
+        } catch (error) {
+          document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.setAttribute("data-theme-choice", "system");
+        }
+      })();
+    </script>
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -13,6 +28,32 @@
 
   </head>
   <body>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Theme: System" title="Theme: System">
+      <svg class="theme-icon theme-icon-system theme-icon-system-desktop" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4" y="5" width="16" height="11" rx="1.5"></rect>
+        <path d="M9 20h6"></path>
+        <path d="M12 16v4"></path>
+      </svg>
+      <svg class="theme-icon theme-icon-system theme-icon-system-phone" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+        <path d="M12 18h.01"></path>
+      </svg>
+      <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="M4.93 4.93l1.41 1.41"></path>
+        <path d="M17.66 17.66l1.41 1.41"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="M4.93 19.07l1.41-1.41"></path>
+        <path d="M17.66 6.34l1.41-1.41"></path>
+      </svg>
+      <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 14.5A7.5 7.5 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path>
+      </svg>
+    </button>
+
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">Danishjeet Singh</a></h1>
@@ -40,5 +81,48 @@
       </section>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      (function() {
+        var toggle = document.getElementById("theme-toggle");
+        var media = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+        var choices = ["system", "light", "dark"];
+        var labels = {
+          system: "Theme: System",
+          light: "Theme: Light",
+          dark: "Theme: Dark"
+        };
+        function applyTheme(choice) {
+          var resolved = choice === "system" ? (media && media.matches ? "dark" : "light") : choice;
+          document.documentElement.setAttribute("data-theme", resolved);
+          document.documentElement.setAttribute("data-theme-choice", choice);
+          if (toggle) {
+            toggle.setAttribute("aria-label", labels[choice]);
+            toggle.setAttribute("title", labels[choice]);
+          }
+        }
+
+        try {
+          var saved = localStorage.getItem("theme") || "system";
+          applyTheme(saved);
+          if (toggle) {
+            toggle.addEventListener("click", function() {
+              var current = localStorage.getItem("theme") || "system";
+              var choice = choices[(choices.indexOf(current) + 1) % choices.length];
+              localStorage.setItem("theme", choice);
+              applyTheme(choice);
+            });
+          }
+          if (media && media.addEventListener) {
+            media.addEventListener("change", function() {
+              if ((localStorage.getItem("theme") || "system") === "system") {
+                applyTheme("system");
+              }
+            });
+          }
+        } catch (error) {
+          applyTheme("system");
+        }
+      })();
+    </script>
   </body>
 </html>

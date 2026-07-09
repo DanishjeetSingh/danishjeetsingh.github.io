@@ -1,9 +1,97 @@
+:root {
+  --bg: #fff;
+  --text: #595959;
+  --heading: #222;
+  --subheading: #393939;
+  --minor-heading: #494949;
+  --link: #39c;
+  --link-hover: #069;
+  --muted: #666;
+  --small: #777;
+  --border: #e5e5e5;
+  --soft-bg: #f8f8f8;
+  --control-bg: #fff;
+  --control-border: #d5d5d5;
+  --code-text: #333;
+}
+
+html[data-theme="dark"] {
+  --bg: #111417;
+  --text: #c7ccd1;
+  --heading: #f0f3f6;
+  --subheading: #e5e9ed;
+  --minor-heading: #dce2e7;
+  --link: #6bb7e6;
+  --link-hover: #99d4f5;
+  --muted: #aeb6bd;
+  --small: #9aa4ad;
+  --border: #30363d;
+  --soft-bg: #191e23;
+  --control-bg: #171b20;
+  --control-border: #3b434c;
+  --code-text: #d8dee5;
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--bg);
   padding:50px;
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  color:#595959;
+  color:var(--text);
   font-weight:400;
+}
+
+body,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+strong,
+code,
+pre,
+blockquote,
+th,
+td,
+hr,
+section,
+.theme-toggle,
+.publication-details,
+.publication-tldr {
+  transition:
+    background-color 240ms ease,
+    border-color 240ms ease,
+    color 240ms ease,
+    stroke 240ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  small,
+  strong,
+  code,
+  pre,
+  blockquote,
+  th,
+  td,
+  hr,
+  section,
+  .theme-toggle,
+  .publication-details,
+  .publication-tldr {
+    transition:none;
+  }
 }
 
 /* Also add this to be extra sure */
@@ -12,7 +100,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color:var(--heading);
   margin:0 0 20px;
 }
 
@@ -27,35 +115,35 @@ h1 {
 }
 
 h2 {
-  color:#393939;
+  color:var(--subheading);
   font-weight: 700;
   font-size:20px !important;
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color:var(--minor-heading);
   font-weight: 500;
   font-size:20px !important;
 }
 
 a {
-  color:#39c;
+  color:var(--link);
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:var(--link-hover);
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:var(--small);
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:#777;
+  color:var(--small);
 }
 
 .wrapper {
@@ -64,7 +152,7 @@ a:hover small {
 }
 
 blockquote {
-  border-left:1px solid #e5e5e5;
+  border-left:1px solid var(--border);
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
@@ -72,14 +160,14 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
+  color:var(--code-text);
 }
 
 pre {
   padding:8px 15px;
-  background: #f8f8f8;
+  background: var(--soft-bg);
   border-radius:5px;
-  border:1px solid #e5e5e5;
+  border:1px solid var(--border);
   overflow-x: auto;
 }
 
@@ -91,16 +179,16 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  border-bottom:1px solid var(--border);
 }
 
 dt {
-  color:#444;
+  color:var(--minor-heading);
   font-weight:500;
 }
 
 th {
-  color:#444;
+  color:var(--minor-heading);
 }
 
 img {
@@ -118,16 +206,16 @@ header ul {
   list-style:none;
   height:40px;
   padding:0;
-  background: #f4f4f4;
+  background: var(--soft-bg);
   border-radius:5px;
-  border:1px solid #e0e0e0;
+  border:1px solid var(--border);
   width:250px;
 }
 
 header li {
   width:89px;
   float:left;
-  border-right:1px solid #e0e0e0;
+  border-right:1px solid var(--border);
   height:40px;
 }
 
@@ -142,7 +230,7 @@ header li:last-child a {
 header ul a {
   line-height:1;
   font-size:11px;
-  color:#999;
+  color:var(--small);
   display:block;
   text-align:center;
   padding-top:6px;
@@ -150,21 +238,21 @@ header ul a {
 }
 
 header ul a:hover {
-  color:#999;
+  color:var(--small);
 }
 
 header ul a:active {
-  background-color:#f0f0f0;
+  background-color:var(--soft-bg);
 }
 
 misc {
-  color:#222;
+  color:var(--heading);
   font-weight:500;
   font-size: 18px;
 }
 
 strong {
-  color:#222;
+  color:var(--heading);
   font-weight:500;
 }
 
@@ -196,11 +284,11 @@ strong {
 }
 
 .publication-details {
-  color:#666;
+  color:var(--muted);
 }
 
 .publication-tldr {
-  color:#555;
+  color:var(--text);
 }
 
 .publication-links a {
@@ -216,7 +304,64 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#222;
+  color:var(--heading);
+}
+
+.theme-toggle {
+  align-items:center;
+  background:transparent;
+  border:0;
+  color:var(--small);
+  cursor:pointer;
+  display:flex;
+  height:36px;
+  justify-content:center;
+  padding:0;
+  position:fixed;
+  right:22px;
+  top:22px;
+  width:36px;
+  z-index:10;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  color:var(--link-hover);
+  outline:none;
+}
+
+.theme-toggle:focus-visible {
+  outline:1px solid var(--link);
+  outline-offset:4px;
+}
+
+.theme-icon {
+  display:none;
+  fill:none;
+  height:20px;
+  stroke:currentColor;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:1.7;
+  width:20px;
+}
+
+.theme-icon-system-phone {
+  height:22px;
+  width:22px;
+}
+
+html[data-theme-choice="light"] .theme-icon-light,
+html[data-theme-choice="dark"] .theme-icon-dark {
+  display:block;
+}
+
+html[data-theme-choice="system"] .theme-icon-system-desktop {
+  display:block;
+}
+
+html[data-theme-choice="system"] .theme-icon-system-phone {
+  display:none;
 }
 
 section {
@@ -231,7 +376,7 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
+  background:var(--border);
   height:1px;
   margin:0 0 20px;
 }
@@ -262,7 +407,7 @@ footer {
   }
 
   section {
-    border:1px solid #e5e5e5;
+    border:1px solid var(--border);
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
@@ -284,6 +429,14 @@ footer {
     word-wrap:break-word;
   }
 
+  html[data-theme-choice="system"] .theme-icon-system-desktop {
+    display:none;
+  }
+
+  html[data-theme-choice="system"] .theme-icon-system-phone {
+    display:block;
+  }
+
   header {
     padding:0;
   }
@@ -300,6 +453,11 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
+  }
+
+  .theme-toggle {
+    right:12px;
+    top:12px;
   }
 
   header ul {
