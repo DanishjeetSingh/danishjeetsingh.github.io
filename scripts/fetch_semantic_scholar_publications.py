@@ -20,6 +20,7 @@ ENV_FILE = ROOT / ".env.local"
 OUTPUT_FILE = ROOT / "_data" / "semantic_scholar_publications.json"
 BASE_URL = "https://api.semanticscholar.org/graph/v1"
 DEFAULT_AUTHOR_ID = "2278229261"
+MAX_RETRIES = 3
 
 MANUAL_TLDRS = {
     "bfd9d51e4631bbd520721407366b07570fe94c2d": (
@@ -67,12 +68,31 @@ class SemanticScholarClient:
         self.last_request_at = 0.0
 
     def get_json(self, path: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
+        query = f"?{urlencode(params or {})}" if params else ""
+
+        for attempt in range(MAX_RETRIES):
+            try:
+                return self._request_json(path, query)
+            except RuntimeError as error:
+                if "HTTP 429" not in str(error) or attempt == MAX_RETRIES - 1:
+                    raise
+
+                delay = 10 * (attempt + 1)
+                print(
+                    f"Semantic Scholar rate limit hit; retrying in {delay}s "
+                    f"({attempt + 1}/{MAX_RETRIES - 1})...",
+                    file=sys.stderr,
+                )
+                time.sleep(delay)
+
+        raise RuntimeError("Semantic Scholar request failed after retries")
+
+    def _request_json(self, path: str, query: str) -> dict[str, Any]:
         if self.api_key:
             elapsed = time.monotonic() - self.last_request_at
-            if elapsed < 1.05:
-                time.sleep(1.05 - elapsed)
+            if elapsed < 2.0:
+                time.sleep(2.0 - elapsed)
 
-        query = f"?{urlencode(params or {})}" if params else ""
         request = Request(f"{BASE_URL}{path}{query}")
         if self.api_key:
             request.add_header("x-api-key", self.api_key)
@@ -236,8 +256,18 @@ def main() -> int:
     api_key = os.environ.get("SEMANTIC_SCHOLAR_API_KEY")
 
     client = SemanticScholarClient(api_key)
-    author = client.get_json(f"/author/{author_id}", {"fields": AUTHOR_FIELDS})
-    papers = fetch_all_papers(client, author_id)
+    try:
+        author = client.get_json(f"/author/{author_id}", {"fields": AUTHOR_FIELDS})
+        papers = fetch_all_papers(client, author_id)
+    except RuntimeError as error:
+        if OUTPUT_FILE.exists():
+            print(f"{error}", file=sys.stderr)
+            print(
+                f"Keeping existing {OUTPUT_FILE.relative_to(ROOT)} so the site can still build.",
+                file=sys.stderr,
+            )
+            return 0
+        raise
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(
