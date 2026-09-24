@@ -4,6 +4,8 @@ layout: post
 author: Danishjeet Singh
 ---
 
+<div class="news-list" markdown="1">
+
 {% for year in site.data.news %}
   {% assign year_name = year[0] %}
   {% assign year_items = year[1] %}
@@ -15,5 +17,7 @@ author: Danishjeet Singh
 
   {% endfor %}
 {% endfor %}
+
+</div>
 
 [Back to home](/)

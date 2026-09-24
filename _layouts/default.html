@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <link rel="shortcut icon" href="../assets/logos/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ "/assets/logos/logo.svg" | relative_url }}" type="image/x-icon">
     <script>
       (function() {
         try {
@@ -23,7 +23,9 @@
     </script>
 
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="{{ "/assets/css/custom.css?v=" | append: site.github.build_revision | relative_url }}">
 
   </head>
@@ -55,30 +57,44 @@
     </button>
 
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">Danishjeet Singh</a></h1>
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Danishjeet Singh headshot" />
-        {% endif %}
+      <header class="sidebar">
+        <div class="identity">
+          {% if site.logo %}
+            <img class="avatar" src="{{site.logo | relative_url}}" alt="Danishjeet Singh headshot" />
+          {% endif %}
+          <div class="identity-text">
+            <h1 class="site-title"><a href="{{ "/" | absolute_url }}">Danishjeet Singh</a></h1>
+            <p class="site-email">singhdan [at] iu [dot] edu</p>
+          </div>
+        </div>
 
-        <p><b>singhdan [at] iu [dot] edu</b><br>
-          <a href="https://github.com/danishjeetsingh">Github</a><br>
-          <a href="https://twitter.com/danishjeetsingh">Twitter/X</a><br>
-          <a href="https://www.linkedin.com/in/danishjeetsingh/">LinkedIn</a><br>
-          <a href="https://scholar.google.com/citations?user=lo0oDfsAAAAJ&hl=en">Google Scholar</a><br>
-          <a href="/docs/cvs/Danishjeet_Singh_resume.pdf">My Resume</a><br>
-          <a href="/assets/logos/logo.jpg">High-resolution photo</a>
-          <!-- <a href="/docs/cvs/Danishjeet_Singh_CV.pdf">CV</a>, <a href="/docs/cvs/transcript_latest.pdf"">transcript</a> -->
-        </p>
+        <nav class="site-nav" aria-label="Pages">
+          {% assign current = page.url %}
+          <a href="{{ "/" | relative_url }}"{% if current == "/" or current == "/index.html" %} class="active" aria-current="page"{% endif %}>Home</a>
+          <a href="{{ "/news.html" | relative_url }}"{% if current == "/news.html" %} class="active" aria-current="page"{% endif %}>News</a>
+          <a href="{{ "/tools.html" | relative_url }}"{% if current == "/tools.html" %} class="active" aria-current="page"{% endif %}>Tools</a>
+          <a href="{{ "/projects.html" | relative_url }}"{% if current == "/projects.html" %} class="active" aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ "/misc.html" | relative_url }}"{% if current == "/misc.html" or current contains "/misc/" %} class="active" aria-current="page"{% endif %}>Misc</a>
+        </nav>
 
-        <p><small>Website *heavily* inspired by <a href="https://eugenielai.github.io/">Eugenie Y. Lai</a></small></p>
+        <ul class="social-links">
+          <li><a href="https://github.com/danishjeetsingh">Github</a></li>
+          <li><a href="https://twitter.com/danishjeetsingh">Twitter/X</a></li>
+          <li><a href="https://www.linkedin.com/in/danishjeetsingh/">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=lo0oDfsAAAAJ&hl=en">Google Scholar</a></li>
+          <li><a href="/docs/cvs/Danishjeet_Singh_resume.pdf">My Resume</a></li>
+          <li><a href="/assets/logos/logo.jpg">High-resolution photo</a></li>
+          <!-- <li><a href="/docs/cvs/Danishjeet_Singh_CV.pdf">CV</a>, <a href="/docs/cvs/transcript_latest.pdf">transcript</a></li> -->
+        </ul>
+
+        <p class="credit">Website *heavily* inspired by <a href="https://eugenielai.github.io/">Eugenie Y. Lai</a></p>
       </header>
-      
-      <section>
+
+      <main class="content">
 
       {{ content }}
-      
-      </section>
+
+      </main>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script>
