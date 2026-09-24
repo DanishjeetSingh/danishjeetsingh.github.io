@@ -9,7 +9,7 @@ Hi, I'm Danish, pronounced **daa-nish**.
 
 I can be best reached through my email or my LinkedIn.
 
-I'm a first year Computer Science PhD Student at Indiana University being advised by [Dr. Jiangpeng He](http://jiangpenghe.github.io/)
+I'm a second year Computer Science PhD Student at Indiana University being advised by [Dr. Jiangpeng He](http://jiangpenghe.github.io/)
 
 I obtained my undergraduate degree from IU as well and was very fortunate to be advised by 
 [Dr. Filippo Menczer ](https://cnets.indiana.edu/fil) at 
