@@ -29,4 +29,4 @@ I’m interested in a pretty wide range of problems across <strong>AI</strong> a
 
 <span style="font-size:18px;">[Projects](./projects.html)</span> to explore my creative side and follow my curiosity.
 
-<span style="font-size:18px;">[Miscellaneous](./misc.html)</span> shenanigans basically
+<span style="font-size:18px;">[Miscellaneous](./misc.html)</span> bits that didn't fit anywhere else: art, old design work, and p5.js sketches.
