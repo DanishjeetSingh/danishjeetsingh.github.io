@@ -1,17 +1,14 @@
 ---
-title: All the useful code and tools I've made
-layout: default
+title: Tools
+layout: post
 author: Danishjeet Singh
-date: 2024-12-14
 ---
 
-# Software
-- [Scipair](https://scipair.github.io/): A tool to explore relationships between authors using data from OpenAlex. Compare authors, visualize coauthorships and citations.
-- [Label Dash](https://labeldash.streamlit.app/): Turn CSV annotation into a fast-paced, fun game for lightning-quick, accurate text labeling!
+Software and code I've built that others may find useful.
 
-# Code
+- [Scipair](https://scipair.github.io/): A tool to explore relationships between authors using data from OpenAlex. Compare authors, visualize coauthorships and citations.
 - [alpha-hub](https://github.com/DanishjeetSingh/alpha-hub): Unofficial alphaXiv-powered CLI and library that gives research agents semantic paper search, AI-generated paper reports, and persistent annotations. Published on [npm](https://www.npmjs.com/package/@danishjeetsingh/alpha-hub).
-- [base36py](https://github.com/DanishjeetSingh/base36py): A lightweight Python library for encoding and decoding numbers between base10 and base36.
+- [Print as Booklet](https://github.com/DanishjeetSingh/print-as-booklet): Print PDFs and Substack articles as folded booklets, with page numbers and staple guides. Works as a macOS Quick Action, a Chrome extension, and an iPhone app.
 
 
 [Back to home](/)
