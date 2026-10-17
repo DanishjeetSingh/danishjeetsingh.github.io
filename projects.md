@@ -4,8 +4,11 @@ layout: post
 author: Danishjeet Singh
 ---
 
-## Apps
+Things I build outside of research. Some are genuinely useful, some are just for fun, and some are an excuse to be creative.
+
+## Apps & Extensions
 - [B-Town Bus](https://btb.singhdan.me): Live Bloomington Transit and IU Campus Bus tracker with saved stops, walk and leave-by times, and a native iPhone app whose Live Activity follows your bus to your stop. [Code](https://github.com/DanishjeetSingh/btown-bus)
+- [Print as Booklet](https://github.com/DanishjeetSingh/print-as-booklet): Print PDFs and Substack articles as folded booklets, with page numbers and staple guides. A Chrome extension first, plus a macOS Quick Action and an iPhone app.
 
 ## Browser Toys
 Small, silly things that run in your browser. Most work best on a desktop.
